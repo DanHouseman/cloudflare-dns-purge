@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloudflare-purge-dns"
+version = "1.0.0"
+description = "Command-line tool for purging DNS records using Cloudflare's 1.1.1.1 API."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["requests>=2.20.0"]
+authors = [
+    {name = "Dan Houseman", email = "dan.houseman+git@gmail.com"}
+]
+license = {text = "MIT"}
+
+[project.scripts]
+cloudflare-purge-dns = "cloudflare-purge_dns:main"
